@@ -1,0 +1,18 @@
+let count=0
+let n=prompt("enter the length of the array:"); // number of chocolate packets
+let userInput = prompt("Enter numbers separated by commas:");
+let arr=userInput.split(',').map(Number);
+
+let result=[]
+for(let i=0;i<n;i++){
+    if(arr[i]!=0){
+       result.push(arr[i])       
+    }
+    else{
+        count++;
+    }
+}
+for(let i=0;i<count;i++){
+    result.push(0);
+}
+console.log(result)
